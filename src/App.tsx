@@ -22,7 +22,7 @@ function App() {
       <div className='container'></div>
       
       <h1> Hello , I'm Laura  </h1>
-      <h2>Dive in and explore my creative projects !!!</h2>
+      <h2>Dive in and explore my creativity !!!</h2>
       <div className='Button'>
      <button type="button"><span></span>About me</button>
      <button type="button"><span></span>Contact Me</button>

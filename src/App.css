@@ -1,4 +1,5 @@
 
+
 body{
   margin: 0;
   padding: 0;
@@ -244,5 +245,97 @@ text-align: center;
   margin-top: 20px;
   font-size: 17px;
   text-align: center;
+}
+
+/* About */
+.About {
+  background-image: linear-gradient(rgba(17, 1, 18, 0.75),rgba(232, 178, 226, 0.897)),url('./assets/icpme.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: ;
+  color: #fff; 
+}
+
+
+/* About Page Styling */
+.About {
+  background-image: linear-gradient(rgba(10, 1, 11, 0.75), rgba(232, 178, 226, 0.897)), url('./assets/icpme.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 170vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  flex: 1;
+}
+
+.main-heading {
+  font-size: 3rem;
+  color: #eb0dc9;
+  margin-bottom: 2px;
+  font-weight: bold;
+  margin-top: 50px;
+  text-align: center;
+  
+}
+
+.sub-heading {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: semi-bold;
+  text-align: center;
+}
+
+.specialties-list {
+  list-style-type: style type disc;
+  padding: 0;
+  margin: 0;
+  font-size: 1.25rem;
+  color: #fff;
+
+}
+
+.specialties-list li {
+  margin: 0.5rem 0;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #fff;
+  background-color: #9d56a3; /* Your primary color */
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.5s ease;
+
+}
+
+.contact-button:hover {
+  background-color: #e4abf0; /* Darker shade for hover effect */
+}
+
+/* Ensure Header and Footer do not overlap */
+header, footer {
+  position: relative;
+  z-index: 2;
 }
 

@@ -23,9 +23,10 @@ export default function Home() {
      <button type="button"><span></span>Contact Me</button>
        </Link>
       </div>
+      <Footer/>
     </div>
 
-  )
+  );
 }
 
 

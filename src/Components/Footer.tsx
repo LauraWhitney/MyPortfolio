@@ -6,17 +6,10 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <div className="footer-links">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
         <div className="footer-social">
-          <a href="https://x.com/laurawhitney31"><i className="fab fa-twitter"></i></a>
-          <a href="https://www.linkedin.com/in/laura-whitney-6751a8258/"><i className="fab fa-linkedin"></i></a>
-          <a href="https://github.com/LauraWhitney"><i className="fab fa-github"></i></a>
+          <a href="https://x.com/laurawhitney31">Twitter<i className="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/laura-whitney-6751a8258/">LinkedIn<i className="fab fa-linkedin"></i></a>
+          <a href="https://github.com/LauraWhitney">Github<i className="fab fa-github"></i></a>
         </div>
       </div>
       <div className="footer-bottom">

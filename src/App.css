@@ -1,3 +1,4 @@
+
 body{
   margin: 0;
   padding: 0;
@@ -206,5 +207,42 @@ Button:hover span{
 }
 Button:hover{
   border: none;
+}
+
+
+.footer{
+background-color: #8a106f;
+color:#e9a6ee;
+padding: 20px 0;
+text-align: center;
+}
+.footer-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.footer-social a {
+  color: #040404;
+  margin: 0 10px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.5s;
+  display: inline;
+  align-items: center;
+}
+.footer-social a i {
+  margin-left: 5px;
+}
+
+.footer-social a:hover {
+  color: #f0a500;
+}
+
+.footer-bottom p {
+  margin-top: 20px;
+  font-size: 17px;
+  text-align: center;
 }
 

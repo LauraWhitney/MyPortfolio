@@ -8,7 +8,7 @@ export default function About() {
     <div className='About'>
       <Header />
       <div className='about-content'>
-
+    <h1>Get to know me more</h1>
       </div>
       <Footer />
     </div>

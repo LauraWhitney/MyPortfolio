@@ -5,7 +5,6 @@ import Footer from './Footer';
 
 export default function About() {
   return (
-    
     <div className='About'> 
     <Header/>
       <div className='about-content'>
@@ -18,7 +17,7 @@ export default function About() {
           <li>JavaScript</li>
         </ul>
         <h2>Also, a blockchain developer</h2>
-        <a href="/contact" className='contact-button'>Contact Me</a>
+        <a href="/contact" className='contact-button'>Get in Touch</a>
       </div>
       <Footer />
     </div>

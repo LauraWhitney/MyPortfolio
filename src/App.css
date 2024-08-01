@@ -38,8 +38,8 @@ img {
   width: 100%;
   position: fixed;
   z-index: 1000;
+  top: 0;
 }
-
 
 
 .header::after {
@@ -49,7 +49,7 @@ img {
   left: 0;
   right: 0;
   height: 10px;
-  background: linear-gradient(to bottom, rgba(212, 142, 206, 0), rgba(232, 197, 229, 1));
+  background: linear-gradient(to bottom, rgba(227, 173, 223, 0), rgba(232, 197, 229, 1));
 
 }
 
@@ -89,9 +89,10 @@ img {
 }
 
 .navbar-item a:hover {
-  background-color: #ed5bd0;
+  background-color: #d59dc2;
   border-radius: 20px;
   transition: 0.7s;
+  color: azure;
 }
 
 .container {
@@ -264,7 +265,7 @@ text-align: center;
 
 /* About Page Styling */
 .About {
-  background-image: linear-gradient(rgba(10, 1, 11, 0.75), rgba(232, 178, 226, 0.897)), url('./assets/icpme.jpg');
+  background-image: linear-gradient(rgba(135, 130, 135, 0.75), rgba(24, 23, 24, 0.897)), url('./assets/icpme.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -325,17 +326,170 @@ text-align: center;
   border-radius: 50px;
   text-decoration: none;
   text-align: center;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.4s ease;
 
 }
 
 .contact-button:hover {
-  background-color: #e4abf0; /* Darker shade for hover effect */
+  background-color: #d187df; /* Darker shade for hover effect */
 }
 
-/* Ensure Header and Footer do not overlap */
-header, footer {
-  position: relative;
-  z-index: 2;
+
+
+/*Contact Me page*/
+.Contact {
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding-top: 300px; 
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
+.contact-content {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 80px; 
+  margin-left: 10%;
+}
+
+.Contact h1 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.Contact p {
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+
+.contact-details,
+.social-media-links,
+.availability {
+  margin-bottom: 3em;
+}
+
+.contact-details h2,
+.social-media-links h2,
+.availability h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.contact-details p,
+.social-media-links a,
+.availability p {
+  font-size: 1.1em;
+  color: #333;
+  text-align: center;
+}
+
+.contact-details a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  transition: 0.3s;
+}
+
+.social-media-links a {
+  display: block;
+  margin: 0.5em 0;
+  color: #bf60e4;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.social-media-links a:hover {
+  text-decoration: underline;
+}
+
+.contact-image {
+  position: absolute;
+  top: 210px;
+  right: 100px;
+  width: 350px; 
+  height: 350px; 
+  border-radius: 250px; 
+  box-shadow: 0 4px 8px rgba(237, 121, 200, 0.2); 
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .Contact {
+    padding-top: 60px; /* Adjust padding-top */
+  }
+
+  .contact-content {
+    width: 95%;
+    margin-left: -10%;
+  }
+
+  .Contact h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    margin-right: 20%;
+  }
+
+  .Contact p {
+    font-size: 1em;
+    margin-bottom: 1em;
+    margin-right: 20%;
+  }
+
+  .contact-details h2,
+  .social-media-links h2,
+  .availability h2 {
+    font-size: 1.5em;
+  }
+
+  .contact-details p,
+  .social-media-links a,
+  .availability p {
+    font-size: 0.9em;
+  }
+
+  .contact-image {
+    position: relative; /* Change to relative for small screens */
+    width: 200px; /* Smaller width */
+    height: 200px; /* Smaller height */
+    top: 20px; /* Adjust top position */
+    left: 0; /* Center image on smaller screens */
+    margin-top: 50px; /* Add margin-top */
+    border-radius: 100px; /* Adjust border radius */
+    margin-left: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Contact h1 {
+    font-size: 1.5em;
+    
+  }
+
+  .Contact p {
+    font-size: 0.9em;
+  }
+
+  .contact-details h2,
+  .social-media-links h2,
+  .availability h2 {
+    font-size: 1.3em;
+  }
+
+  .contact-details p,
+  .social-media-links a,
+  .availability p {
+    font-size: 0.8em;
+  }
+
+  .contact-image {
+    width: 150px; /* Even smaller width */
+    height: 150px; /* Even smaller height */
+    border-radius: 75px; /* Adjust border radius */
+  }
+}

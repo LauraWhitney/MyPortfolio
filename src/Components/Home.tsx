@@ -1,4 +1,4 @@
-import React from 'react';
+
 import '../App.css';
 import Me from '../assets/me3.jpg';
 import Header from './Header';

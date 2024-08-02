@@ -192,6 +192,7 @@ Button{
   overflow: hidden;
   margin-bottom: 8%;
  
+ 
 }
 span{
   background: #e9a6ee;
@@ -202,7 +203,8 @@ span{
   left: 0%;
   bottom: 0%;
   z-index: -1;
-  transition: 0.5s;
+  transition: 0.4s;
+
 }
 Button:hover span{
   width: 100%;

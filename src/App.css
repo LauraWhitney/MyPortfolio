@@ -17,6 +17,7 @@ img {
   width: 60px;
   height: auto;
   box-shadow: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
 }
 
 .app {

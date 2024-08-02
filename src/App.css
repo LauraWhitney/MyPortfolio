@@ -75,8 +75,8 @@ img {
 }
 
 .me-image {
-  width: 200px; 
-  height: 200px; 
+  width: 400px; 
+  height: 400px; 
   border-radius: 50%; 
   object-fit: cover; 
   margin-bottom: 20px;
@@ -85,6 +85,7 @@ img {
   transition: transform 0.3s, box-shadow 0.3s; 
   animation: bounce 3s infinite; 
 }
+
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
@@ -108,6 +109,24 @@ img {
   margin-top: 90px;
 }
 
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 90px;
+  }
+
+  .me-image {
+    margin-right: 40px;
+  }
+
+  .Intro {
+    max-width: 60%;
+  }
+}
+
 .Intro h1 {
   font-size: 2.5rem;
   margin: 10px 0;
@@ -122,7 +141,7 @@ img {
 
 .Button {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -136,24 +155,14 @@ img {
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .Button button:hover {
   background-color: #3498db;
+  transform: translateY(-3px);
 }
 
-span{
-  background: #e9a6ee;
-  height: 100%;
-  width: 0%;
-  border-radius: 25px;
-  position: absolute;
-  left: 0%;
-  bottom: 0%;
-  z-index: -1;
-  transition: 0.5s;
-}
 Button:hover span{
   width: 100%;
 }
@@ -286,160 +295,148 @@ text-align: center;
 
 
 
-/*Contact Me page*/
-.Contact {
-  background-color: #ffffff;
-  min-height: 100vh;
-  padding-top: 300px; 
-  flex-direction: column;
-  align-items: center;
+.contact-content {
+  width: 100%;
   text-align: center;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.contact-content {
-  width: 80%;
-  max-width: 600px;
-  margin: 0 auto;
-  padding-top: 80px; 
-  margin-left: 10%;
+.contact-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.contact-image:hover {
+  transform: scale(1.05);
 }
 
 .Contact h1 {
-  font-size: 2.5em;
-  margin-bottom: 40px;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
 }
 
 .Contact p {
-  font-size: 1.2em;
-  margin-bottom: 2em;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #34495e;
+}
+.contact-details {
+  margin-top: 30px;
+  text-align: left;
 }
 
-.contact-details,
-.social-media-links,
-.availability {
-  margin-bottom: 3em;
+.contact-details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2980b9;
 }
 
-.contact-details h2,
-.social-media-links h2,
-.availability h2 {
-  font-size: 2em;
-  margin-bottom: 0.5em;
-  text-align: center;
-}
-
-.contact-details p,
-.social-media-links a,
-.availability p {
-  font-size: 1.1em;
-  color: #333;
-  text-align: center;
+.contact-details p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #34495e;
 }
 
 .contact-details a {
-  color: #007bff;
+  color: #2980b9;
   text-decoration: none;
 }
 
 .contact-details a:hover {
-  transition: 0.3s;
+  text-decoration: underline;
+}
+
+.social-media-links {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.social-media-links h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2980b9;
 }
 
 .social-media-links a {
   display: block;
-  margin: 0.5em 0;
-  color: #bf60e4;
+  margin-bottom: 5px;
+  color: #34495e;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1rem;
 }
 
 .social-media-links a:hover {
-  text-decoration: underline;
+  color: #2980b9;
 }
 
-.contact-image {
-  position: absolute;
-  top: 210px;
-  right: 100px;
-  width: 350px; 
-  height: 350px; 
-  border-radius: 250px; 
-  box-shadow: 0 4px 8px rgba(237, 121, 200, 0.2); 
+.social-media-links i {
+  margin-right: 8px;
 }
 
-
-/* Responsive adjustments */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .Contact {
-    padding-top: 60px; /* Adjust padding-top */
-  }
-
   .contact-content {
-    width: 95%;
-    margin-left: -10%;
-  }
-
-  .Contact h1 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    margin-right: 20%;
-  }
-
-  .Contact p {
-    font-size: 1em;
-    margin-bottom: 1em;
-    margin-right: 20%;
-  }
-
-  .contact-details h2,
-  .social-media-links h2,
-  .availability h2 {
-    font-size: 1.5em;
-  }
-
-  .contact-details p,
-  .social-media-links a,
-  .availability p {
-    font-size: 0.9em;
+    padding: 15px;
   }
 
   .contact-image {
-    position: relative; /* Change to relative for small screens */
-    width: 200px; /* Smaller width */
-    height: 200px; /* Smaller height */
-    top: 20px; /* Adjust top position */
-    left: 0; /* Center image on smaller screens */
-    margin-top: 50px; /* Add margin-top */
-    border-radius: 100px; /* Adjust border radius */
-    margin-left: 80%;
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .contact-details h2,
+  .social-media-links h2 {
+    font-size: 1.3rem;
+  }
+
+  .contact-details p,
+  .social-media-links a {
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 480px) {
-  .Contact h1 {
-    font-size: 1.5em;
-    
-  }
-
-  .Contact p {
-    font-size: 0.9em;
-  }
-
-  .contact-details h2,
-  .social-media-links h2,
-  .availability h2 {
-    font-size: 1.3em;
-  }
-
-  .contact-details p,
-  .social-media-links a,
-  .availability p {
-    font-size: 0.8em;
+  .contact-content {
+    padding: 10px;
   }
 
   .contact-image {
-    width: 150px; /* Even smaller width */
-    height: 150px; /* Even smaller height */
-    border-radius: 75px; /* Adjust border radius */
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .contact-details h2,
+  .social-media-links h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-details p,
+  .social-media-links a {
+    font-size: 0.8rem;
   }
 }

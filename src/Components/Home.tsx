@@ -15,15 +15,15 @@ export default function Home() {
         <div className='Intro'>
           <h1> Hello , I'm Laura  </h1>
           <h2>Dive in and explore my creativity !!!</h2>
+          <div className='Button'>
+            <Link to="/about">
+              <button type="button">About me</button>
+            </Link>
+            <Link to="/contact">
+              <button type="button">Contact Me</button>
+          </Link>
+          </div>
         </div>
-      </div>
-      <div className='Button'>
-        <Link to="/about">
-          <button type="button">About me</button>
-        </Link>
-        <Link to="/contact">
-          <button type="button">Contact Me</button>
-       </Link>
       </div>
       <Footer/>
     </div>

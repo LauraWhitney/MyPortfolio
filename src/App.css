@@ -172,39 +172,61 @@ Button:hover{
 
 
 .footer{
-background-color: #8a106f;
-color:#e9a6ee;
-padding: 20px 0;
-text-align: center;
+  background-color: #ff6ec4;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
 }
+
 .footer-content{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 10px;
+  gap: 20px;
 }
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+
 .footer-social a {
-  color: #040404;
-  margin: 0 10px;
-  font-size: 16px;
+  color: #fff;
   text-decoration: none;
-  transition: color 0.5s;
-  display: inline;
-  align-items: center;
-}
-.footer-social a i {
-  margin-left: 5px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
 .footer-social a:hover {
-  color: #f0a500;
+  color: #3498db;
+}
+
+.footer-social i {
+  margin-left: 8px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
 }
 
 .footer-bottom p {
-  margin-top: 20px;
-  font-size: 17px;
-  text-align: center;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-social {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 /* About */

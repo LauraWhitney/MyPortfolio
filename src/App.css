@@ -1,5 +1,3 @@
-
-
 body{
   margin: 0;
   padding: 0;
@@ -11,19 +9,14 @@ scroll-behavior: smooth;
 
 img {
   width: 200px; 
-  height: 200px; 
-  border-radius: 50%; 
+  height: 200px;
   object-fit: cover; 
-  
 }
+
 .logo-image{
-  width: 100px; 
-  height: auto; 
-  padding-right: 0%;
-  margin-left: -30px;
-  margin-top: 10px;
-  margin-right: 0%;
-  cursor: pointer;
+  width: 60px;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.4);
 }
 
 .app {
@@ -32,8 +25,8 @@ img {
 
 .header {
   background-color: #E8C5E5;
-  padding: 10px 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
   position: relative;
   width: 100%;
   position: fixed;
@@ -41,28 +34,12 @@ img {
   top: 0;
 }
 
-
-.header::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 10px;
-  background: linear-gradient(to bottom, rgba(227, 173, 223, 0), rgba(232, 197, 229, 1));
-
-}
-
 .navbar {
   display: flex;
   justify-content: center;
- padding: 10px 0;
   top: 0%;
   width: 100%;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-top: 4%;
-  
+  margin-top: 5px;
 }
 
 .navbar-menu {
@@ -71,12 +48,11 @@ img {
   padding: 0;
   display: flex;
   align-items: center;
-  
 }
 
 .navbar-item {
   margin: 0 20px;
-  
+  font-size: 16px;
 }
 
 .navbar-item a {
@@ -91,8 +67,7 @@ img {
 .navbar-item a:hover {
   background-color: #d59dc2;
   border-radius: 20px;
-  transition: 0.7s;
-  color: azure;
+  transition: .3s;
 }
 
 .container {
@@ -100,7 +75,6 @@ img {
   margin-top: -10%;
 
 }
-
 
 .me-image {
   width: 400px; 

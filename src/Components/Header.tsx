@@ -14,7 +14,7 @@ export default function Header() {
           
             <li className='navbar-item'><Link to="/">Home</Link></li>
             <li className='navbar-item'><Link to="about">About</Link></li>
-            <li className='navbar-item'><a href='resume'>Resume</a></li>
+            <li className='navbar-item'><Link to='resume'>Resume</Link></li>
             <li className='navbar-item'><Link to="Contact">Contact</Link></li>
           </ul>
         </nav>
